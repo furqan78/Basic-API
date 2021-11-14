@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <!--link css -->
+    <link href="../css/style.css" rel="stylesheet" />
+    <title>API | API METHODS</title>
+    
+</head>
+<body>
+    <!--login box container-->
+    <div id="login-box">
+        <!--right container-->
+        <div class="right">
+            <h1>Find Factorial</h1>
+            <div class="form-container">
+                <span class="error" id="error"></span>
+                <span class="success" id="success"></span>
+                <form onsubmit="return false;">    
+                <input type="number" name="factorial" id="factorial" placeholder="Enter a number" required />            
+                <input type="submit" class="signin_btn" name="btnSubmit"  id= "btnSubmit">
+                <a class="link" href="../Home.php">Go Back</a>
+                </form>
+                <script src="../script/factorial.js" defer></script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

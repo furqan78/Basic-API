@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <!--link css -->
+    <link href="css/style.css" rel="stylesheet" />
+    <title>API | API METHODS</title>
+</head>
+<body>
+    <!--login box container-->
+    <div id="login-box">
+        <!--left container-->
+        <div class="left">
+            <div class="container_left">
+                <h1 class="hadding">Welcome, Back</h1>
+                <p class="para_signin">If you don't have an account create one by simply click on sign up.</p>
+            </div>
+        </div>
+        <!--right container-->
+        <div class="right">
+            <h1>Log In</h1>
+            <div class="form-container">
+                <span class="error" id="error"></span>
+                <form onsubmit="return false;">    
+                <input type="email" name="email" id="email" placeholder="E-mail" required />
+                <input type="password" name="password" id="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" required />
+                <input type="checkbox" onclick="password_toggle()"> Show Password<br />              
+                <input type="submit" class="signin_btn" name="btnSubmit"  id= "btnSubmit">
+                </form>
+                <script src="login.js" defer></script>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    //Show Password toggle script
+    function password_toggle() {
+        var showPassword = document.getElementById("password");
+        if (showPassword.type === "password") {
+            showPassword.type = "text";
+        } else {
+            showPassword.type = "password";
+        }
+    }
+</script>
+
+</html>

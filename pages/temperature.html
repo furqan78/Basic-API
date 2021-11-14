@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <!--link css -->
+    <link href="../css/style.css" rel="stylesheet" />
+    <title>API | API METHODS</title>
+</head>
+<body>
+    <!--login box container-->
+    <div id="login-box">
+        <!--right container-->
+        <div class="right">
+            <h1>Convert Temperature</h1>
+            <div class="form-container">
+                <span class="error" id="error"></span>
+                <span class="success" id="success"></span>
+                <form onsubmit="return false;">    
+                <input type="text" name="temperature" id="temperature" placeholder="Enter Temperature" required /> 
+                <input list="type" name="type">
+                    <datalist id="type">
+                        <option value="Celcius">
+                        <option value="Fahrenheit">
+                    </datalist>           
+                <input type="submit" class="signin_btn" name="btnSubmit"  id= "btnSubmit">
+                <a class="link" href="../Home.php">Go Back</a>
+                </form>
+                <script src="../script/temperature.js" defer></script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
